@@ -1,0 +1,17 @@
+body {
+    font-size: 20px;
+    display: flex;
+}
+div {
+    font-size: 20px;
+    @media (max-width: 765px) {
+        font-size: 10px;
+    }
+}
+
+span {
+    font-size: 20px;
+    @media (max-width: 765px) {
+        font-size: 10px;
+    }
+}
