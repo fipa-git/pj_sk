@@ -1,0 +1,522 @@
+    <div class="sk-universal-header--container">
+        <div class="burger-menu" id="toggle-menu--open">
+  <span class="burger-menu__span">
+    <i class="burger-menu__i"></i>
+    <i class="burger-menu__i"></i>
+  </span>
+        </div>
+        <div class="burger-menu close openMenu" id="toggle-menu-mobile--close">
+  <span class="burger-menu__span">
+    <i class="burger-menu__i"></i>
+    <i class="burger-menu__i"></i>
+  </span>
+        </div>
+
+
+        <a href="https://uat.sk.ru/" class="logo">
+
+            <img src="https://sk.ru/static/base/img/Logo_SK-10_rus_green.svg" alt="">
+
+        </a>
+
+        <nav class="sk-universal-header-nav">
+
+
+
+            <a href="https://services.uat.sk.ru/" class="sk-universal-header-nav__link">
+                Сервисы
+            </a>
+
+            <a href="https://navigator.uat.sk.ru/navigator/" class="sk-universal-header-nav__link">
+                Участники
+            </a>
+
+            <a href="https://events.sk.ru/events/" class="sk-universal-header-nav__link" target="_blank">
+                Мероприятия
+            </a>
+
+            <a href="https://uat.sk.ru/news/" class="sk-universal-header-nav__link">
+                Новости
+            </a>
+
+            <a href="https://uat.sk.ru/education/" class="sk-universal-header-nav__link">
+                Образование
+            </a>
+
+            <a href="https://uat.sk.ru/covid-19/" class="sk-universal-header-nav__link COVID19">
+                <span class="nomobile">Стоп</span> COVID-19
+            </a>
+
+
+        </nav>
+
+        <div class="sk-universal-header-submenu">
+            <div class="sk-universal-header-search">
+                <img src="https://sk.ru/static/base/img/icon/search.svg" alt="">
+            </div>
+            <a href="https://sk.ru/covid-19" class="COVID19 nodesktop992 sk-universal-header-link">
+                COVID-19
+            </a>
+            <a href="https://uat.sk.ru/transport/" class="sk-universal-header-link sk-universal-header-link--address" role="button" tabindex="0/1/7">
+                <div class="sk-universal-header-link__text">
+                    Как добраться
+                </div>
+            </a>
+            <span class="sk-universal-header-link sk-universal-header-link--account logIn" id="sk-universal-header-link--account" role="button" tabindex="0/1/8">
+    <div class="sk-universal-header-link__text">Войти</div>
+  </span>
+
+            <div id="language-selector" class="sk-universal-header-link sk-universal-header-link--language">
+                <div class="language">Eng</div>
+            </div>
+        </div>
+
+        <!-- попап войти -->
+        <div class="modalPopap modalPopap_logIn">
+            <div class="popup-login popup-login_reg">
+
+                <div class="popup-login__header">
+                    <label class="label label_radio label_upper">
+                        <input type="radio" class="label__input" name="radiopopap1" id="radio-reg">
+                        <div class="label__point"></div>
+                        <div class="label__text" data-st-key="register">Зарегистрироваться</div>
+                    </label>
+                </div>
+
+                <form class="popup-login__body popup-login__body_reg" action="https://sso.sk.ru/auth/realms/sk-community/login-actions/authenticate?session_code=8yXhygUa96SL6lXPQzBh-cDla8dyjGLBj5e4VsJ5pT8&amp;execution=7dfc30c4-3927-4a7b-832e-9aa924859904&amp;client_id=sk-portal&amp;tab_id=7hgvjfy4abE&amp;sk_form_action=register" method="post">
+                    <div class="popup-login__body-description" data-st-key="createAccount">Создайте учетную запись</div>
+                    <div class="popup-login__body-list">
+                        <label class="label label_input error">
+                            <input class="label__input st-node-param" data-st-params="placeholder=email" type="email" name="email" tabindex="1" placeholder="Email">
+                            <span class="label__error">Введите e-mail</span>
+                        </label>
+                        <label class="label label_input">
+                            <input class="label__input st-node-param" data-st-params="placeholder=firstName" type="text" name="firstName" tabindex="2" placeholder="Имя">
+                            <span class="label__error"></span>
+                        </label>
+                        <label class="label label_input">
+                            <input class="label__input st-node-param" data-st-params="placeholder=lastName" type="text" name="lastName" tabindex="3" placeholder="Фамилия">
+                            <span class="label__error"></span>
+                        </label>
+                        <label class="label label_input st-node-param">
+                            <input class="label__input" data-st-params="placeholder=password" type="password" name="password" tabindex="4" placeholder="Пароль">
+                            <div class="label__help">В пароль должен быть длинной от 6 до 8 симовлов, можно использовать буквы латинского алфавита и цифры</div>
+                            <span class="label__error"></span>
+                        </label>
+                    </div>
+                    <label class="label label_checkbox">
+                        <input type="checkbox" class="label__input" name="approve">
+                        <div class="label__point"></div>
+                        <div class="label__text st-node" data-st-key="acceptPolicy" data-st-html="true">Согласие <a href="https://sk.ru/policy/" target="_blank" tabindex="6">с правилами использования и обработки персональных данных</a></div>
+                    </label>
+                    <div class="popup-login__body-button">
+                        <button class="button button_green st-node" data-st-key="register" tabindex="7">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="popup-login popup-login_auth active">
+
+                <div class="popup-login__header">
+                    <label class="label label_radio label_upper">
+                        <input type="radio" class="label__input" name="radiopopap1" checked="checked" id="radio-lk">
+                        <div class="label__point"></div>
+                        <div class="label__text" data-st-key="signInMP">Войти в личный кабинет</div>
+                    </label>
+                </div>
+
+                <form class="popup-login__body popup-login__body_auth" action="https://sso.sk.ru/auth/realms/sk-community/login-actions/authenticate?session_code=8yXhygUa96SL6lXPQzBh-cDla8dyjGLBj5e4VsJ5pT8&amp;execution=7dfc30c4-3927-4a7b-832e-9aa924859904&amp;client_id=sk-portal&amp;tab_id=7hgvjfy4abE&amp;sk_form_action=auth" method="post">
+                    <div class="popup-login__body-description" data-st-key="enterSignInData">Введите данные для входа</div>
+                    <div class="popup-login__body-list">
+                        <label class="label label_input">
+                            <input class="label__input uth_email_inp st-node-param" type="email" data-st-params="placeholder=email" name="username" required="" tabindex="8" placeholder="Email">
+                            <span class="label__error" id="auth-mail-error">Введите e-mail</span>
+                        </label>
+                        <label class="label label_input">
+                            <input class="label__input st-node-param" type="password" data-st-params="placeholder=password" name="password" required="" tabindex="9" placeholder="Пароль">
+                            <span class="label__error" id="auth-pass-error">Введите пароль</span>
+                        </label>
+                    </div>
+                    <div class="popup-login__body-button">
+                        <button class="button button_green st-node" data-st-key="signIn" type="submit" id="authbtn" tabindex="10" onclick="this.disabled=true; this.form.submit();">Войти</button>
+                        <label class="label label_checkbox">
+                            <input type="checkbox" class="label__input" name="rememberMe" tabindex="9">
+                            <div class="label__point"></div>
+                            <div class="label__text st-node" data-st-key="rememberMe">Запомнить меня</div>
+                        </label>
+                    </div>
+                    <a href="https://uat.sk.ru/auth/realms/sk-community/login-actions/reset-credentials?client_id=sk-portal&amp;tab_id=7hgvjfy4abE" class="popup-login__pass" data-st-key="forgotPassword" tabindex="11">Забыли пароль?</a>
+                </form>
+            </div>
+        </div>
+        <div id="logout-tab" class="modalPopap modalPopap_logOut">
+            <a class="button button_header button_green" href="https://lk.uat.sk.ru/">Личный кабинет</a>
+
+            <a class="button button_header button_link" href="https://uat.sk.ru/auth/logout">Выйти</a>
+            <div class="arrow">
+                <img src="tmp_files/arrow-left.svg" alt="">
+            </div>
+        </div>
+
+        <div class="modalPopap modalPopap_search">
+            <div id="search-header" class="search">
+                <form id="search-header__form" action="https://uat.sk.ru/search/">
+                    <div id="search-header__input" class="search__input">
+                        <input id="search-header__field" type="text" class="search__field" placeholder="Поиск">
+                    </div>
+                    <a href="https://uat.sk.ru/foundation/polygon-city/#" class="button button_header button_search">
+                        <span class="button__icon"></span>
+                        найти
+                    </a>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- десктопная и планшетная версия меню -->
+        <div id="sk-universal-header-menu" class="sk-universal-header-menu" style="display: none;">
+            <div class="sk-universal-header-menu-scroll"><!-- эту высоту надо брать от родителя и на всякий случай пересчитывать при изменении размера окна -->
+                <div class="sk-universal-header-menu-scroll-block">
+                    <div class="sk-universal-header-menu--container">
+                        <div class="sk-universal-header-menu__close" id="toggle-menu--close">
+                            <img src="tmp_files/close.svg" alt="">
+                        </div>
+
+                        <div class="sk-universal-header-menu-list">
+
+
+
+                            <div class="list-element">
+                                <div class="list-element-box__title">
+                                    <a href="https://uat.sk.ru/" class="list-element__title">
+                                        <div class="list-element__title-wrap">
+                                            Проект Сколково
+                                        </div>
+                                    </a>
+                                    <div class="arrow">
+                                        <img src="tmp_files/arrow-left.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="list-element-box__sub">
+
+                                    <a href="https://navigator.uat.sk.ru/navigator/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Стартапы
+                                        </div>
+                                    </a>
+
+                                    <a href="http://sk.ru/net/partners/p/skpartnerslist.aspx" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Партнеры
+                                        </div>
+                                    </a>
+
+                                    <a href="https://services.uat.sk.ru/sdirectory/" class="list-element__link" target="_blank">
+                                        <div class="list-element__link-wrap">
+                                            Сервисы
+                                        </div>
+                                    </a>
+
+                                    <a href="https://uat.sk.ru/economics/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Центр компетенций: нормативное регулирование
+                                        </div>
+                                    </a>
+
+                                    <a href="https://uat.sk.ru/applicants-actions/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Стать участником проекта
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="list-element">
+                                <div class="list-element-box__title">
+                                    <a href="https://events.sk.ru/" class="list-element__title" target="_blank">
+                                        <div class="list-element__title-wrap">
+                                            Мероприятия
+                                        </div>
+                                    </a>
+                                    <div class="arrow">
+                                        <img src="tmp_files/arrow-left.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="list-element-box__sub">
+
+                                    <a href="https://startupvillage.ru/" class="list-element__link" target="_blank">
+                                        <div class="list-element__link-wrap">
+                                            Startup Village
+                                        </div>
+                                    </a>
+
+                                    <a href="https://startup-tour.ru/" class="list-element__link" target="_blank">
+                                        <div class="list-element__link-wrap">
+                                            Startup Tour
+                                        </div>
+                                    </a>
+
+                                    <a href="https://openinnovations.ru/" class="list-element__link" target="_blank">
+                                        <div class="list-element__link-wrap">
+                                            Открытые инновации
+                                        </div>
+                                    </a>
+
+                                    <a href="https://www.skjazz.ru/" class="list-element__link" target="_blank">
+                                        <div class="list-element__link-wrap">
+                                            Skolkovo Jazz Science
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="list-element">
+                                <div class="list-element-box__title">
+                                    <a href="https://uat.sk.ru/news/" class="list-element__title">
+                                        <div class="list-element__title-wrap">
+                                            Новости
+                                        </div>
+                                    </a>
+                                    <div class="arrow">
+                                        <img src="tmp_files/arrow-left.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="list-element-box__sub">
+
+                                    <a href="https://new.sk.ru/news/?q_type=2" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Пресс-релизы
+                                        </div>
+                                    </a>
+
+                                    <a href="https://new.sk.ru/news/?q_type=3" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Мнения
+                                        </div>
+                                    </a>
+
+                                    <a href="https://new.sk.ru/news/?q_type=4" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Проект в зеркале СМИ
+                                        </div>
+                                    </a>
+
+                                    <a href="https://new.sk.ru/news/?q_type=5" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Медиагалерея
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="list-element">
+                                <div class="list-element-box__title">
+                                    <a href="http://sk.ru/foundation/about/" class="list-element__title">
+                                        <div class="list-element__title-wrap">
+                                            О Фонде
+                                        </div>
+                                    </a>
+                                    <div class="arrow">
+                                        <img src="tmp_files/arrow-left.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="list-element-box__sub">
+
+                                    <a href="https://uat.sk.ru/fund-skolkovo/about-skolkovo/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            О Фонде "Сколково"
+                                        </div>
+                                    </a>
+
+                                    <a href="https://uat.sk.ru/fund-skolkovo/team/board-of-trustees/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Руководство
+                                        </div>
+                                    </a>
+
+                                    <a href="http://sk.ru/foundation/documents/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Нормативные документы
+                                        </div>
+                                    </a>
+
+                                    <a href="https://uat.sk.ru/fund-skolkovo/contacts/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Контакты
+                                        </div>
+                                    </a>
+
+                                    <a href="https://uat.sk.ru/foundation/results/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Отчётность
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="list-element">
+                                <div class="list-element-box__title">
+                                    <a href="https://uat.sk.ru/" class="list-element__title">
+                                        <div class="list-element__title-wrap">
+                                            Образование
+                                        </div>
+                                    </a>
+                                    <div class="arrow">
+                                        <img src="tmp_files/arrow-left.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="list-element-box__sub">
+
+                                    <a href="http://www.skoltech.ru/" class="list-element__link" target="_blank">
+                                        <div class="list-element__link-wrap">
+                                            Сколтех
+                                        </div>
+                                    </a>
+
+                                    <a href="http://sk.ru/city/gymnasium/" class="list-element__link" target="_blank">
+                                        <div class="list-element__link-wrap">
+                                            Международная гимназия
+                                        </div>
+                                    </a>
+
+                                    <a href="http://sk.ru/opus/" class="list-element__link" target="_blank">
+                                        <div class="list-element__link-wrap">
+                                            Открытый университет
+                                        </div>
+                                    </a>
+
+                                    <a href="https://sk.ru/academy/" class="list-element__link" target="_blank">
+                                        <div class="list-element__link-wrap">
+                                            Академия наставников
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="list-element">
+                                <div class="list-element-box__title">
+                                    <a href="https://skolcity.uat.sk.ru/" class="list-element__title">
+                                        <div class="list-element__title-wrap">
+                                            Город
+                                        </div>
+                                    </a>
+                                    <div class="arrow">
+                                        <img src="tmp_files/arrow-left.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="list-element-box__sub">
+
+                                    <a href="https://skolcity.ru/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Городская среда
+                                        </div>
+                                    </a>
+
+                                    <a href="https://skolcity.uat.sk.ru/map/" class="list-element__link" target="_blank">
+                                        <div class="list-element__link-wrap">
+                                            Апартаменты
+                                        </div>
+                                    </a>
+
+                                    <a href="https://feedback.sk.ru/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Обратная связь
+                                        </div>
+                                    </a>
+
+                                    <a href="https://uat.sk.ru/transport/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Как добраться
+                                        </div>
+                                    </a>
+
+                                    <a href="https://uat.sk.ru/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Медицина
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="list-element">
+                                <div class="list-element-box__title">
+                                    <a href="http:" class="list-element__title">
+                                        <div class="list-element__title-wrap">
+                                            Специальные проекты
+                                        </div>
+                                    </a>
+                                    <div class="arrow">
+                                        <img src="tmp_files/arrow-left.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="list-element-box__sub">
+
+                                    <a href="https://uat.sk.ru/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Центр компетенции по реализации федерального проекта <br>«Нормы регулирования цифровой среды»
+                                        </div>
+                                    </a>
+
+                                    <a href="https://uat.sk.ru/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Поддержка проектов по преобразованию приоритетных отраслей экономики и социальной сферы
+                                        </div>
+                                    </a>
+
+                                    <a href="https://uat.sk.ru/" class="list-element__link">
+                                        <div class="list-element__link-wrap">
+                                            Развитие и продвижение системы технологических конкурсов и инициатив <br> в рамках Национальной технологической инициативы
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="sk-universal-header-menu__footer">
+
+                            <style>
+                                @media all and (min-width: 993px) {
+                                    .sk-universal-header-menu__footer{
+                                        margin-top: -96px;
+                                    }
+                                }
+                            </style>
+                            <div>
+                                <div class="list-element__title">
+                                    <div class="list-element__title-wrap" style="color: rgba(32, 32, 32, 0.7);">Сайт функционирует в режиме<br>опытно-промышленной эксплуатации</div>
+                                    <p>&nbsp;</p>
+                                    <a href="https://old.sk.ru/" class="list-element__title">
+                                        <div class="list-element__title-wrap" style="font-size: 12px; color: #9FDB3D;">Перейти на старый сайт Фонда «Сколково»</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

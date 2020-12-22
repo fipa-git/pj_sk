@@ -12,6 +12,7 @@ let path = {
     src: {
         html: [src_folder + "/*.html", "!" + src_folder + "/_*.html"],
         css: src_folder + "/scss/style.scss",
+        main_css: src_folder + "/css/*.css",
         js: src_folder + "/js/script.js",
         img: src_folder + "/img/**/*.{png,jpg,svg,gif,ico}",
         fonts: src_folder + "/fonts/*.ttf",
@@ -57,7 +58,13 @@ function html() {
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream())
 }
+function main_css(params) {
+    return src (path.src.main_css)
+        .pipe(dest(path.build.css))
+        .pipe(browsersync.stream())
 
+
+}
 // Функция обработки css файлов
 function css() {
     return src(path.src.css)
@@ -126,7 +133,7 @@ function clean(params) {
 // Сценарий выполнения финкций 
 let build = gulp.series(
     clean,
-    gulp.parallel(html, css, images, fonts)
+    gulp.parallel(html, css, main_css, images, fonts)
     );
 let watch = gulp.parallel(
     build,
@@ -135,6 +142,7 @@ let watch = gulp.parallel(
     );
 
 exports.css = css;
+exports.main_css = main_css;
 exports.html = html;
 exports.images = images;
 exports.fonts = fonts;
